@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Light Mode Styles */
+body {
+    background: #f5f5f5;
+    color: #333;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    padding-top: 70px; /* Prevents content from being hidden under navbar */
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #1a1a1a;
+    color: #f5f5f5;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between; /* Pushes logo to the left, menu to the right */
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive; /* Stylish cursive font */
+    color: #ff9800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Dark Mode Button (Below Navbar, Right Side) */
+#toggle-mode {
+    position: absolute;
+    top: 80px; /* Positioned below the navbar */
+    right: 20px;
+    background: #ff9800;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    z-index: 1000;
+}
+
+#toggle-mode:hover {
+    background: #e68900;
+}
+
+/* About Page Container */
+.about-container {
+    max-width: 800px;
+    margin: 100px auto 50px;
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .about-container {
+    background: #292929;
+    color: white;
+}
+
+/* About Page Text */
+.about-container h1 {
+    font-size: 36px;
+    color: #ff9800;
+    margin-bottom: 15px;
+}
+
+.about-container h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.sub-heading {
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}

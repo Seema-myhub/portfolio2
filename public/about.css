@@ -1,0 +1,35 @@
+/* About Section */
+.about {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: black; /* black background for clarity */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+}
+
+.about h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color:wheat; /* Deep Blue */
+}
+
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: orange; /* Soft Pink */
+}
+
+.about h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #878f99; /* Grey */
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color:whitesmoke; /* Dark Grey for better readability */
+}
